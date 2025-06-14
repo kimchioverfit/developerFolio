@@ -4,23 +4,23 @@ import {skillsSection} from "../../portfolio";
 
 export default function SoftwareSkill() {
   return (
-    <div>
-      <div className="software-skills-main-div">
-        <ul className="dev-icons">
-          {skillsSection.softwareSkills.map((skills, i) => {
-            return (
-              <li
-                key={i}
-                className="software-skill-inline"
-                name={skills.skillName}
-              >
-                <i className={skills.fontAwesomeClassname}></i>
-                <p>{skills.skillName}</p>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+    <div className="software-skills-main-div">
+      {skillsSection.softwareSkills.map((skill, i) => (
+        <div className="software-skill-inline" key={i}>
+          {skill.fontAwesomeClassname ? (
+            <i className={`${skill.fontAwesomeClassname} software-skills-icon`}></i>
+          ) : (
+            skill.customIcon && (
+              <img
+                src={require(`../../assets/images/${skill.customIcon}`)}
+                alt={skill.skillName}
+                className="software-skills-custom-icon"
+              />
+            )
+          )}
+          <p>{skill.skillName}</p>
+        </div>
+      ))}
     </div>
   );
 }

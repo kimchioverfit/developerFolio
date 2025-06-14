@@ -3,6 +3,7 @@
 .education-card {
   display: flex;
   flex-direction: row;
+  gap: 2rem;
 }
 
 .education-card:hover + .education-card-border {
@@ -78,6 +79,16 @@
   margin-top: 0.5rem;
 }
 
+.education-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Media Query */
 
 @media (max-width: 1380px) {
@@ -130,5 +141,11 @@
   .education-text-bullets > ul {
     max-width: 80%;
     margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-logo {
+    height: 40px;
   }
 }
