@@ -175,7 +175,7 @@ const workExperiences = {
     {
       company: "Republic of Korea Army",
       companylogo: require("./assets/images/rok.png"), // 필요 시 군 로고 이미지 추가
-      date: "Mar 2014 – Feb 2016",
+      date: "Feb 2014 – Feb 2016",
       desc: "Completed mandatory military service in the Republic of Korea Army. Demonstrated responsibility, leadership, and adaptability in high-pressure environments.",
     }
   ]
