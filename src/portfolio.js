@@ -154,7 +154,7 @@ const workExperiences = {
         "Implemented image preprocessing and ROI extraction for defect detection (Blur, Histogram equlization, Otsu & Adaptive Thresholding, Canny & Sobel, Laplacian and ETC",
         "Integrated C++ DLLs with Python to accelerate image analysis workflows and reduce latency (Cmake, Cython)",
         "Trained and evaluated deep learning models for segmentation in high-res images (U-Net, SegNet, Mask R-CNN, ViT(Normal), SETR, Mask2Former)",
-        "Optimized filtering pipelines for varying lighting and noise conditions in manufacturing images ()",
+        "Optimized filtering pipelines for varying lighting and noise conditions in manufacturing images",
         "Accelerated compute-intensive image processing tasks using CUDA"
       ]
     },
