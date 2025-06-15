@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/developerFolio/static/css/main.b98e6ccd.css",
-    "main.js": "/developerFolio/static/js/main.b6831970.js",
+    "main.js": "/developerFolio/static/js/main.c55c1750.js",
     "static/css/64.bba8fa55.chunk.css": "/developerFolio/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/developerFolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/developerFolio/static/css/769.b3cbb36b.chunk.css",
@@ -34,11 +34,11 @@
     "static/media/tensorflow.svg": "/developerFolio/static/media/tensorflow.b675fae9e6dd5e9a9cb8.svg",
     "static/media/pytorch.svg": "/developerFolio/static/media/pytorch.48338b80b52d44a4930c.svg",
     "static/media/cuda.svg": "/developerFolio/static/media/cuda.eb2beb65a9f282d3594c.svg",
-    "static/media/docker.svg": "/developerFolio/static/media/docker.402471a8309d58457b24.svg",
+    "static/media/docker.svg": "/developerFolio/static/media/docker.977d2fab970d9777f189.svg",
     "static/media/googleAssistant.svg": "/developerFolio/static/media/googleAssistant.3227e84a89a1650db619.svg",
     "static/media/talksCardBack.svg": "/developerFolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.b98e6ccd.css.map": "/developerFolio/static/css/main.b98e6ccd.css.map",
-    "main.b6831970.js.map": "/developerFolio/static/js/main.b6831970.js.map",
+    "main.c55c1750.js.map": "/developerFolio/static/js/main.c55c1750.js.map",
     "64.bba8fa55.chunk.css.map": "/developerFolio/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/developerFolio/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/developerFolio/static/css/769.b3cbb36b.chunk.css.map",
@@ -46,6 +46,6 @@
   },
   "entrypoints": [
     "static/css/main.b98e6ccd.css",
-    "static/js/main.b6831970.js"
+    "static/js/main.c55c1750.js"
   ]
 }
