@@ -150,14 +150,13 @@ const workExperiences = {
       date: "Feb 2022 – Present",
       desc: "Camera module testing SW Develop.",
       descBullets: [
-        "Developed automated camera module testing tools using Python, OpenCV, and PyTorch",
-        "Implemented image preprocessing and ROI extraction for defect detection",
-        "Integrated C++ DLLs with Python to accelerate image analysis workflows and reduce latency",
-        "Trained and evaluated deep learning models for segmentation in high-res images",
-        "Optimized filtering pipelines for varying lighting and noise conditions in manufacturing images"
+        "Developed automated camera module testing tools using Python, OpenCV, and PyTorch (Defect Pixel Correction, Auto Exposure, PRNU, Auto White Balance, Fixed Pattern Noise correction, Bining & Subsampling, LCB and ETC)",
+        "Implemented image preprocessing and ROI extraction for defect detection (Blur, Histogram equlization, Otsu & Adaptive Thresholding, Canny & Sobel, Laplacian and ETC",
+        "Integrated C++ DLLs with Python to accelerate image analysis workflows and reduce latency (Cmake, Cython)",
+        "Trained and evaluated deep learning models for segmentation in high-res images (U-Net, SegNet, Mask R-CNN, ViT(Normal), SETR, Mask2Former)",
+        "Optimized filtering pipelines for varying lighting and noise conditions in manufacturing images ()",
+        "Accelerated compute-intensive image processing tasks using CUDA"
       ]
-      
-      
     },
     {
       role: "Software Engineer Intern",
