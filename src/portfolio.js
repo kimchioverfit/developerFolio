@@ -177,7 +177,7 @@ const workExperiences = {
       company: "Republic of Korea Army",
       companylogo: require("./assets/images/rok.png"), // 필요 시 군 로고 이미지 추가
       date: "Mar 2014 – Feb 2016",
-      desc: "Completed mandatory military service as a Sergeant in the Republic of Korea Army. Demonstrated responsibility, leadership, and adaptability in high-pressure environments.",
+      desc: "Completed mandatory military service in the Republic of Korea Army. Demonstrated responsibility, leadership, and adaptability in high-pressure environments.",
       descBullets: [
         "Led a squad and managed training operations for junior soldiers",
         "Maintained and operated military communication equipment",
