@@ -20,7 +20,16 @@
 .contact-detail,
 .contact-detail-email {
   margin-top: 20px;
-  font-size: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  color: $subTitle;
+  text-decoration: none;
+}
+
+.contact-detail,
+.contact-detail-location {
+  margin-top: 20px;
+  font-size: 20px;
   font-weight: 400;
   color: $subTitle;
   text-decoration: none;
@@ -28,6 +37,13 @@
 
 .contact-detail:hover,
 .contact-detail-email:hover {
+  color: $textColor;
+  text-shadow: 2px 1px 2px $contactDetailHoverTS;
+  transition: all 0.3s;
+}
+
+.contact-detail:hover,
+.contact-detail-location:hover {
   color: $textColor;
   text-shadow: 2px 1px 2px $contactDetailHoverTS;
   transition: all 0.3s;
@@ -81,7 +97,22 @@
     font-size: 20px;
   }
 
+  .contact-detail,
+  .contact-detail-location {
+    font-size: 10px;
+  }
+
   .contact-image-div {
     display: none;
+  }
+}
+
+.map-container {
+  margin-top: 20px;
+  //text-align: center;
+
+  iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
 }

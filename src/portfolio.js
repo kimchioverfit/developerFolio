@@ -36,6 +36,7 @@ const socialMediaLinks = {
   github: "https://github.com/kimchioverfit",
   linkedin: "https://www.linkedin.com/in/youngjoon-kim-8106981b2/",
   gmail: "god102104@gmail.com",
+  location: "https://g.co/kgs/1PMzPWQ",
   display: true // Set true to display this section, defaults to false
 };
 
@@ -274,7 +275,8 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+82-01034483676",
-  email_address: "god102104@gmail.com"
+  email_address: "god102104@gmail.com",
+  location : "https://g.co/kgs/WWGoPrs"
 };
 
 // Twitter Section

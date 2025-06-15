@@ -44,6 +44,19 @@ export default function socialMedia() {
         </a>
       ) : null}
 
+      {socialMediaLinks.location ? (
+        <a
+          href={socialMediaLinks.location}
+          className="icon-button location"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fas fa-map-marker-alt"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+
       {socialMediaLinks.gitlab ? (
         <a
           href={socialMediaLinks.gitlab}

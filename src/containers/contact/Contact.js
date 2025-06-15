@@ -49,6 +49,28 @@ export default function Contact() {
               </a>
               <br />
               <br />
+              <a
+                className="contact-detail-location"
+                href={contactInfo.location} 
+              >
+                Current Location 🌏 : {contactInfo.location}
+              </a>
+              <br />
+              <br />
+
+              <div className="map-container">
+                <iframe
+                  title="current-location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.3848802467196!2d126.819177!3d37.28601109999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6e7956db5f73%3A0x6c21d40a4fc10dd1!2z6rK96riw64-EIO2ZlOyEseyLnCDsiJjrhbjsnYQx66GcIDE0OA!5e0!3m2!1sko!2skr!4v1749980138226!5m2!1sko!2skr"
+                  width="300"
+                  height="200"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
               <SocialMedia />
             </div>
           </div>
