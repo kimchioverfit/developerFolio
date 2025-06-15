@@ -70,6 +70,8 @@ export default function Contact() {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
+              <br />
+              <br />
 
               <SocialMedia />
             </div>
