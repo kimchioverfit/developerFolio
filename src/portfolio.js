@@ -20,7 +20,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Patrick Kim 김영준",
+  username: "Patrick Kim 김영준 ",
   title: "Hi all, I'm Patrick Kim",
   subTitle: emoji(
     "A passionate Software Engineer 🚀 with a deep enthusiasm for Machine Learning and Deep Learning — experienced in building intelligent systems using Python, PyTorch, TensorFlow, and scalable architectures for real-world applications."
