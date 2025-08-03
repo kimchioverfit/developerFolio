@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/developerFolio/static/css/main.f3dbda94.css",
-    "main.js": "/developerFolio/static/js/main.0af9df48.js",
+    "main.js": "/developerFolio/static/js/main.6217aa0a.js",
     "static/css/64.bba8fa55.chunk.css": "/developerFolio/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/developerFolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/developerFolio/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.bda0d7b7.chunk.js": "/developerFolio/static/js/769.bda0d7b7.chunk.js",
+    "static/media/me_and_ashish_vaswani.jpeg": "/developerFolio/static/media/me_and_ashish_vaswani.1a4dffbc67a052ab64b3.jpeg",
     "static/media/rok.png": "/developerFolio/static/media/rok.7e6e7a7aac899af04a96.png",
     "static/media/Montserrat-Regular.ttf": "/developerFolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/rok.jpg": "/developerFolio/static/media/rok.4b4f609f74a7b982a16e.jpg",
@@ -38,7 +39,7 @@
     "static/media/googleAssistant.svg": "/developerFolio/static/media/googleAssistant.3227e84a89a1650db619.svg",
     "static/media/talksCardBack.svg": "/developerFolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.f3dbda94.css.map": "/developerFolio/static/css/main.f3dbda94.css.map",
-    "main.0af9df48.js.map": "/developerFolio/static/js/main.0af9df48.js.map",
+    "main.6217aa0a.js.map": "/developerFolio/static/js/main.6217aa0a.js.map",
     "64.bba8fa55.chunk.css.map": "/developerFolio/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/developerFolio/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/developerFolio/static/css/769.b3cbb36b.chunk.css.map",
@@ -46,6 +47,6 @@
   },
   "entrypoints": [
     "static/css/main.f3dbda94.css",
-    "static/js/main.0af9df48.js"
+    "static/js/main.6217aa0a.js"
   ]
 }
