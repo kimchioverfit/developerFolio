@@ -30,17 +30,32 @@ export default function Contact() {
               }
             >
               {contactInfo.number && (
-                <>
-                  <a
-                    className="contact-detail"
-                    href={"tel:" + contactInfo.number}
-                  >
+                <div
+                  style={{ position: "relative", display: "inline-block" }}
+                  onMouseEnter={() => setShowPhoto(true)}
+                  onMouseLeave={() => setShowPhoto(false)}
+                >
+                  <a className="contact-detail" href={"tel:" + contactInfo.number}>
                     {contactInfo.number}
                   </a>
-                  <br />
-                  <br />
-                </>
-              )}
+                  {/* 이스터에그 이미지 */}
+                  {showPhoto && (
+                    <img
+                      src={require("../../assets/images/me_and_ashish_vaswani.jpeg")}
+                      alt="Easter Egg"
+                      style={{
+                        position: "absolute",
+                        top: "30px",
+                        left: "110%",
+                        width: "120px",
+                        borderRadius: "8px",
+                        boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
+                        zIndex: 100,
+                      }}
+                    />
+                  )}
+              <br />
+              <br />
               <a
                 className="contact-detail-email"
                 href={"mailto:" + contactInfo.email_address}
