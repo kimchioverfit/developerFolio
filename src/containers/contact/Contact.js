@@ -44,20 +44,35 @@ export default function Contact() {
 
                   {/* ✅ 이스터에그 이미지 */}
                   {showPhoto && (
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: "30px",
+                      left: "110%",
+                      width: "150px",
+                      backgroundColor: "white",
+                      borderRadius: "8px",
+                      boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
+                      padding: "8px",
+                      zIndex: 100,
+                      textAlign: "center"
+                    }}
+                  >
                     <img
                       src={easterEggPhoto}
                       alt="Easter Egg"
                       style={{
-                        position: "absolute",
-                        top: "30px",
-                        left: "110%",
-                        width: "120px",
-                        borderRadius: "8px",
-                        boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
-                        zIndex: 100,
+                        width: "100%",
+                        borderRadius: "4px",
+                        marginBottom: "6px"
                       }}
                     />
-                  )}
+                    <div style={{ fontSize: "12px", color: "#333" }}>
+                      Me & Ashish Vaswani 😎
+                    </div>
+                  </div>
+                )}
+
                 </div>
               )}
 
