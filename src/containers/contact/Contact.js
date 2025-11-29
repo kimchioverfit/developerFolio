@@ -68,7 +68,7 @@ export default function Contact() {
                       }}
                     />
                     <div style={{ fontSize: "12px", color: "#333" }}>
-                      Me & Ashish Vaswani 😎
+                      Ashish Vaswani & Me 😎
                     </div>
                   </div>
                 )}
