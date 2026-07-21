@@ -158,6 +158,7 @@ const workExperiences = {
         "Designed and trained deep learning models for segmentation of industrial images (U-Net, SegNet, Mask R-CNN, ViT, SETR, Mask2Former) and optimized inference for real-time factory systems.",
         "Developed a DNN-based performance prediction model using time-series PC resource logs (CPU, Memory, Disk, I/O patterns) to forecast Tact Time and detect early signs of system degradation.",
         "Applied Transformer-based architectures (TST, FT-Transformer) and multivariate sequence modeling to predict throughput under varying system workloads.",
+        "Developed Active Alignment (AA) software with MTF/SFR-based focus and tilt optimization for camera module assembly.",
       ]
     },
     {
