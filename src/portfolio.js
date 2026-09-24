@@ -145,6 +145,7 @@ const workExperiences = {
     {
       role: "Software Engineer (Computer Vision / ML)",
       company: "LG Innotek",
+      featured: true, // Shown full-width above the other cards
       companylogo: require("./assets/images/lge.png"),
       date: "Feb 2022 – Present",
       desc: "Camera-module manufacturing: deep-learning inspection models, data pipelines, and equipment-side deployment.",
@@ -201,8 +202,12 @@ const bigProjects = {
     {
       projectName: "wkentaro/labelme — Image Annotation Tool (16k+ ★)",
       projectDesc:
-        'AI-Box bounding-box normalization fix (#2025 → #2026, landed via #2032; credited in the v6.2.0 release notes). Proposed mask-level shape merge with a working demo (#2548), shipped by the maintainer as "Merge Shapes" (#2684). AI model download progress (#1899) adopted in #1948; mask brush editing controls (#2110) became the origin of #2184.',
+        'Directional shape selection with Ctrl/Cmd+Arrow (#2692, merged; shipped in v7.6.0). AI-Box bounding-box normalization fix (#2025 → #2026, landed via #2032; credited in the v6.2.0 release notes). Proposed mask-level shape merge with a working demo (#2548), shipped by the maintainer as "Merge Shapes" (#2684). AI model download progress (#1899) adopted in #1948; mask brush editing controls (#2110) became the origin of #2184.',
       footerLink: [
+        {
+          name: "Arrow selection #2692",
+          url: "https://github.com/wkentaro/labelme/pull/2692"
+        },
         {
           name: "Bbox fix #2026",
           url: "https://github.com/wkentaro/labelme/pull/2026"
@@ -263,7 +268,7 @@ const achievementSection = {
       image: require("./assets/images/kt.png"),
       imageAlt: "KT",
       footerLink: []
-    },
+    }
     // {
     //   title: "3rd Place, KNU Code Fair & Medical Big Data Competition",
     //   subtitle: "Kyungpook National University.",
