@@ -102,7 +102,7 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
   schools: [
     {
       schoolName: "Kyungpook National University",
