@@ -264,13 +264,13 @@ const achievementSection = {
       imageAlt: "KT",
       footerLink: []
     },
-    {
-      title: "3rd Place, KNU Code Fair & Medical Big Data Competition",
-      subtitle: "Kyungpook National University.",
-      image: require("./assets/images/knu.jpg"),
-      imageAlt: "Kyungpook National University",
-      footerLink: []
-    }
+    // {
+    //   title: "3rd Place, KNU Code Fair & Medical Big Data Competition",
+    //   subtitle: "Kyungpook National University.",
+    //   image: require("./assets/images/knu.jpg"),
+    //   imageAlt: "Kyungpook National University",
+    //   footerLink: []
+    // }
   ],
   display: true // Set false to hide this section, defaults to true
   // title: emoji("Achievements And Certifications 🏆 "),
