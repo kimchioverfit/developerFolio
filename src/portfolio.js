@@ -23,10 +23,9 @@ const greeting = {
   username: "Patrick Kim 김영준",
   title: "Hi all, I'm Patrick Kim",
   subTitle: emoji(
-    "A passionate Software Engineer 🚀 with a deep enthusiasm for Machine Learning and Deep Learning — experienced in building intelligent systems using Python, PyTorch, TensorFlow, and scalable architectures for real-world applications."
+    "Computer Vision / ML engineer at LG Innotek since 2022, taking deep-learning perception models from prototype to fully automated production on camera-module manufacturing lines — from architecture selection and failure-mode analysis to data strategy and deployment under real latency budgets (TensorRT, custom CUDA kernels). Open-source contributor to labelme and torchvision."
   ),
-  resumeLink:
-    "", // Set to empty to hide the button
+  resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -42,26 +41,32 @@ const socialMediaLinks = {
 
 // Skills Section
 
-  const skillsSection = {
-    title: "What I do",
-    subTitle: "DEDICATED SOFTWARE ENGINEER DRIVEN BY MACHINE LEARNING AND SYSTEM-LEVEL OPTIMIZATION",
-    skills: [
-      emoji("⚡ Develop efficient and scalable ML/DL pipelines using Python, PyTorch, and TensorFlow"),
-      emoji("⚡ Implement real-time computer vision applications with OpenCV and C++"),
-      emoji("⚡ Design and deploy AI-powered solutions on edge devices and embedded systems"),
-      emoji("⚡ Optimize performance-critical code with C++ and parallel computing techniques"),
-      emoji("⚡ Integrate and automate model inference in production using REST APIs or C++ DLLs")
+const skillsSection = {
+  title: "What I do",
+  subTitle:
+    "COMPUTER VISION ENGINEER TAKING PERCEPTION MODELS FROM PROTOTYPE TO PRODUCTION",
+  skills: [
+    emoji(
+      "⚡ Segmentation / detection modeling with CNN and transformer families — Mask R-CNN, DeepLabv3, Mask2Former, EoMT, SAM2 with LoRA adaptation, ViT / ConvNeXt / Hiera backbones"
+    ),
+    emoji(
+      "⚡ Failure-mode analysis on production data — FP/FN root-causing, query assignment and loss-level fixes rather than more post-processing"
+    ),
+    emoji(
+      "⚡ Data strategy — dataset construction, labeling-scheme design (incl. amodal labels), model-assisted labeling with SAM2"
+    ),
+    emoji(
+      "⚡ Deployment under latency budgets — TensorRT, ONNX Runtime, LibTorch (C++), FP16 / mixed precision, custom CUDA kernels"
+    ),
+    emoji(
+      "⚡ Camera fundamentals — optical-center calibration, active alignment (MTF/SFR), sensor image-quality metrics"
+    )
   ],
-  
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "Aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
     {
       skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
@@ -78,28 +83,18 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "OpenCV",
       fontAwesomeClassname: "",
-      customIcon: "opencv.svg" 
+      customIcon: "opencv.svg"
     },
     {
       skillName: "Pytorch",
       fontAwesomeClassname: "",
-      customIcon: "pytorch.svg" 
-    },
-    {
-      skillName: "Tensorflow",
-      fontAwesomeClassname: "",
-      customIcon: "tensorflow.svg" 
-    },
-    {
-      skillName: "Matlab",
-      fontAwesomeClassname: "",
-      customIcon: "matlab.svg" 
+      customIcon: "pytorch.svg"
     },
     {
       skillName: "Cuda",
       fontAwesomeClassname: "",
-      customIcon: "cuda.svg" 
-    },
+      customIcon: "cuda.svg"
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -107,13 +102,16 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Kyungpook National Univiersity",
+      schoolName: "Kyungpook National University",
       logo: require("./assets/images/knu.jpg"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "Feb 2014 - Feb 2021"
+      subHeader: "B.S. in Computer Science and Engineering",
+      duration: "2014 – 2021",
+      descBullets: [
+        "Undergraduate thesis: Motion Similarity Detection Algorithm Using Relationships Between Joint Data — Korean Intelligent Information Systems Society"
+      ]
     }
   ]
 };
@@ -145,41 +143,43 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
+      role: "Software Engineer (Computer Vision / ML)",
       company: "LG Innotek",
       companylogo: require("./assets/images/lge.png"),
       date: "Feb 2022 – Present",
-      desc: "Camera module testing SW development, industrial PC performance monitoring, and ML-based performance prediction.",
-      descBullets: 
-      [
-        "Developed automated camera module testing tools using Python, OpenCV, and PyTorch (Defect Pixel Correction, Auto Exposure, PRNU, Auto White Balance, FPN correction, Binning & Subsampling, LCB evaluation).",
-        "Implemented robust image preprocessing and ROI extraction pipelines for defect detection (Gaussian/Laplacian blur, Histogram Equalization, Otsu & Adaptive Thresholding, Canny/Sobel edge detection).",
-        "Integrated C++/CUDA DLLs with Python using CMake/Cython to accelerate high-resolution image analysis workflows.",
-        "Designed and trained deep learning models for segmentation of industrial images (U-Net, SegNet, Mask R-CNN, ViT, SETR, Mask2Former) and optimized inference for real-time factory systems.",
-        "Developed a DNN-based performance prediction model using time-series PC resource logs (CPU, Memory, Disk, I/O patterns) to forecast Tact Time and detect early signs of system degradation.",
-        "Applied Transformer-based architectures (TST, FT-Transformer) and multivariate sequence modeling to predict throughput under varying system workloads.",
-        "Developed Active Alignment (AA) software with MTF/SFR-based focus and tilt optimization for camera module assembly.",
+      desc: "Camera-module manufacturing: deep-learning inspection models, data pipelines, and equipment-side deployment.",
+      descBullets: [
+        "Own segmentation/detection architecture for production inspection — selected, trained, and evaluated Mask R-CNN (ConvNeXt / Hiera backbones), DeepLabv3, Mask2Former, EoMT, and SAM2, swapping the production stack as line conditions changed. The measurement pipeline this powers went from ~19.8 operator-hours/day to fully automated (LG Innotek Best Practice Award).",
+        "Systematic failure-mode analysis on production data — traced high-confidence false positives to the second-stage box head rather than the RPN through isolated experiments (anchor scales, NMS/score thresholds, backbone swaps, a two-stage OK/NG filter), steering the fix toward assignment/loss-level changes instead of more post-processing.",
+        "Instance separation for touching same-class objects — diagnosed merged/duplicate masks in query-based models and evaluated Hungarian matching, query-to-GT assignment, localization priors, and separation/boundary losses.",
+        "Data strategy and labeling — built datasets end to end, designed the labeling scheme including canonical-shape (amodal) labels, and used model-assisted labeling (SAM2 refinement, AI-box prompts).",
+        "Prototype → production under latency budgets — cut end-to-end inspection latency ~6× (~2,000 ms → 300–400 ms) via full-path profiling, FP16 / mixed precision, and custom CUDA pre/post-processing kernels; hybrid Windows-native C++ runtime (ONNX Runtime + TensorRT, LibTorch) behind a common DLL interface.",
+        "Amodal reconstruction of damaged film patterns — canonical-label Mask R-CNN predicting the complete mask as a template-matching localizer, plus diffusion-based reconstruction of the missing region.",
+        "Foundation-model adaptation and classification — SAM adapted to domain defects with prompt-guided supervision and LoRA; OK/NG classifiers (ConvNeXt, EfficientNet-B0, EfficientFormer) for epoxy-interconnection inspection.",
+        "Camera fundamentals — optical-center detection, Active Alignment with MTF/SFR-based focus and tilt optimization, sensor image-quality automation (DPC, AE, AWB, PRNU, FPN, binning/subsampling, LCB).",
+        "Beyond vision — FT-Transformer / TST time-series models on equipment telemetry to predict tact-time drift; team AX (AI Transformation) representative."
       ]
     },
     {
-      role: "Software Engineer Intern",
+      role: "AI / Software Engineering Intern",
       company: "KT",
       companylogo: require("./assets/images/kt.png"),
-      date: "June 2021 – Aug 2021",
-      desc: "Developed a cloud resource monitoring tool to visualize and track server usage statistics. Worked with Linux, Prometheus, and Grafana to collect and display system metrics for internal dashboards."
+      date: "Jun 2021 – Aug 2021",
+      desc: "Built a cloud resource monitoring tool on Linux with Prometheus and Grafana to collect and visualize server metrics for internal dashboards. Received the KT AI Innovation Technology Award."
     },
     {
-      role: "Software Engineer Intern",
-      company: "LG Electronics",
+      role: "Software Engineering Intern",
+      company: "LG Electronics (Bengaluru, India)",
       companylogo: require("./assets/images/lge.png"),
-      date: "July 2020 – Aug 2020",
-      desc: "Built an IoT prototype application using webOS for smart home device control. Focused on UI interaction and device communication through webOS APIs and JavaScript-based app logic."
+      date: "Jul 2020 – Aug 2020",
+      desc: "Built a webOS smart-home IoT prototype for device control in a global, English-speaking engineering team."
     },
     {
-      company: "Republic of Korea Army",
-      companylogo: require("./assets/images/rok.png"), // 필요 시 군 로고 이미지 추가
-      date: "Feb 2014 – Feb 2016",
-      desc: "Completed mandatory military service in the Republic of Korea Army. Demonstrated responsibility, leadership, and adaptability in high-pressure environments.",
+      role: "Social Service Agent (alternative to military service)",
+      company: "Republic of Korea",
+      companylogo: require("./assets/images/socialService.png"),
+      date: "Dec 2013 – Dec 2015",
+      desc: "Completed the two-year national service obligation."
     }
   ]
 };
@@ -194,12 +194,85 @@ const openSource = {
 
 // Some big projects you have worked on
 
-const bigProjects = {};
+const bigProjects = {
+  title: "Open-Source Contributions",
+  subtitle: "FIXES AND FEATURES UPSTREAMED FROM PRODUCTION WORK",
+  projects: [
+    {
+      projectName: "wkentaro/labelme — Image Annotation Tool (16k+ ★)",
+      projectDesc:
+        'AI-Box bounding-box normalization fix (#2025 → #2026, landed via #2032; credited in the v6.2.0 release notes). Proposed mask-level shape merge with a working demo (#2548), shipped by the maintainer as "Merge Shapes" (#2684). AI model download progress (#1899) adopted in #1948; mask brush editing controls (#2110) became the origin of #2184.',
+      footerLink: [
+        {
+          name: "Bbox fix #2026",
+          url: "https://github.com/wkentaro/labelme/pull/2026"
+        },
+        {
+          name: "Merge Shapes #2548",
+          url: "https://github.com/wkentaro/labelme/issues/2548"
+        },
+        {
+          name: "Progress #1899",
+          url: "https://github.com/wkentaro/labelme/pull/1899"
+        }
+      ]
+    },
+    {
+      projectName:
+        "pytorch/vision (torchvision) — Computer Vision Library (17k+ ★)",
+      projectDesc:
+        "Found while bringing FP16 Mask R-CNN inference up under LibTorch on Windows: diagnosed a CUDA/MSVC half-precision build failure in ROI Pool caused by an ambiguous comparison (#9246) and submitted a patch comparing in the accumulator type (#9399).",
+      footerLink: [
+        {
+          name: "Issue #9246",
+          url: "https://github.com/pytorch/vision/issues/9246"
+        },
+        {name: "PR #9399", url: "https://github.com/pytorch/vision/pull/9399"}
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
+  title: emoji("Awards 🏆"),
+  subtitle: "Recognition for production impact and AI transformation work",
+  achievementsCards: [
+    {
+      title: "LG Innotek Best Practice Award",
+      subtitle:
+        "Deep-learning measurement pipeline that took a manual inspection task from ~19.8 operator-hours/day to fully automated.",
+      image: require("./assets/images/lge.png"),
+      imageAlt: "LG Innotek",
+      footerLink: []
+    },
+    {
+      title: "LG Innotek AX Representative Award",
+      subtitle: "Team AX (AI Transformation) representative.",
+      image: require("./assets/images/lge.png"),
+      imageAlt: "LG Innotek",
+      footerLink: []
+    },
+    {
+      title: "KT AI Innovation Technology Award",
+      subtitle:
+        "Cloud resource monitoring tool built during the KT internship.",
+      image: require("./assets/images/kt.png"),
+      imageAlt: "KT",
+      footerLink: []
+    },
+    {
+      title: "3rd Place, KNU Code Fair & Medical Big Data Competition",
+      subtitle: "Kyungpook National University.",
+      image: require("./assets/images/knu.jpg"),
+      imageAlt: "Kyungpook National University",
+      footerLink: []
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
   // title: emoji("Achievements And Certifications 🏆 "),
   // subtitle:
   //   "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
@@ -259,7 +332,20 @@ const achievementSection = {
 
 // Blogs Section
 
-const blogSection = {};
+const blogSection = {
+  title: "Study Notes",
+  subtitle: "Notes on the papers and techniques behind my work.",
+  displayMediumBlogs: "false",
+  blogs: [
+    {
+      url: "https://kimchioverfit.github.io/Study/",
+      title: "kimchioverfit / Study",
+      description:
+        "Study notes on computer vision, deep learning, and ML systems."
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
 
 // Talks Sections
 
@@ -278,7 +364,7 @@ const contactInfo = {
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+82-01034483676",
   email_address: "god102104@gmail.com",
-  location : "https://g.co/kgs/WWGoPrs"
+  location: "https://g.co/kgs/WWGoPrs"
 };
 
 // Twitter Section
