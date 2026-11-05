@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/developerFolio/static/css/main.0befa43a.css",
-    "main.js": "/developerFolio/static/js/main.bb5c7d23.js",
+    "main.css": "/developerFolio/static/css/main.aac8099c.css",
+    "main.js": "/developerFolio/static/js/main.5725626a.js",
     "static/css/487.bb36206c.chunk.css": "/developerFolio/static/css/487.bb36206c.chunk.css",
-    "static/js/487.9779af71.chunk.js": "/developerFolio/static/js/487.9779af71.chunk.js",
+    "static/js/487.fdd7e198.chunk.js": "/developerFolio/static/js/487.fdd7e198.chunk.js",
     "static/css/990.c6a7ee28.chunk.css": "/developerFolio/static/css/990.c6a7ee28.chunk.css",
-    "static/js/990.3ff8cbd3.chunk.js": "/developerFolio/static/js/990.3ff8cbd3.chunk.js",
+    "static/js/990.aa248afe.chunk.js": "/developerFolio/static/js/990.aa248afe.chunk.js",
     "static/media/me_and_ashish_vaswani.jpeg": "/developerFolio/static/media/me_and_ashish_vaswani.1a4dffbc67a052ab64b3.jpeg",
     "static/media/rok.png": "/developerFolio/static/media/rok.7e6e7a7aac899af04a96.png",
     "static/media/Montserrat-Regular.ttf": "/developerFolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
@@ -38,15 +38,15 @@
     "static/media/docker.svg": "/developerFolio/static/media/docker.977d2fab970d9777f189.svg",
     "static/media/googleAssistant.svg": "/developerFolio/static/media/googleAssistant.3227e84a89a1650db619.svg",
     "static/media/talksCardBack.svg": "/developerFolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.0befa43a.css.map": "/developerFolio/static/css/main.0befa43a.css.map",
-    "main.bb5c7d23.js.map": "/developerFolio/static/js/main.bb5c7d23.js.map",
+    "main.aac8099c.css.map": "/developerFolio/static/css/main.aac8099c.css.map",
+    "main.5725626a.js.map": "/developerFolio/static/js/main.5725626a.js.map",
     "487.bb36206c.chunk.css.map": "/developerFolio/static/css/487.bb36206c.chunk.css.map",
-    "487.9779af71.chunk.js.map": "/developerFolio/static/js/487.9779af71.chunk.js.map",
+    "487.fdd7e198.chunk.js.map": "/developerFolio/static/js/487.fdd7e198.chunk.js.map",
     "990.c6a7ee28.chunk.css.map": "/developerFolio/static/css/990.c6a7ee28.chunk.css.map",
-    "990.3ff8cbd3.chunk.js.map": "/developerFolio/static/js/990.3ff8cbd3.chunk.js.map"
+    "990.aa248afe.chunk.js.map": "/developerFolio/static/js/990.aa248afe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0befa43a.css",
-    "static/js/main.bb5c7d23.js"
+    "static/css/main.aac8099c.css",
+    "static/js/main.5725626a.js"
   ]
 }
