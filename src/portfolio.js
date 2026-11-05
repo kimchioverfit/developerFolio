@@ -23,7 +23,7 @@ const greeting = {
   username: "Patrick Kim 김영준",
   title: "Hi all, I'm Patrick Kim",
   subTitle: emoji(
-    "Computer Vision / ML engineer at LG Innotek since 2022, taking deep-learning perception models from prototype to fully automated production on camera-module manufacturing lines — from architecture selection and failure-mode analysis to data strategy and deployment under real latency budgets (TensorRT, custom CUDA kernels). Open-source contributor to labelme and torchvision."
+    "Computer Vision / ML engineer at LG Innotek since 2022. I build vision models and deploy them on manufacturing lines, from data and model design to optimized C++ inference. I also build and operate internal tools that connect model evaluation, automated training experiments, and human-reviewed labeling."
   ),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -43,8 +43,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle:
-    "COMPUTER VISION ENGINEER TAKING PERCEPTION MODELS FROM PROTOTYPE TO PRODUCTION",
+  subTitle: "VISION MODELS, PRODUCTION INFERENCE, AND TOOLS FOR ML DEVELOPMENT",
   skills: [
     emoji(
       "⚡ Segmentation / detection modeling with CNN and transformer families — Mask R-CNN, DeepLabv3, Mask2Former, EoMT, SAM2 with LoRA adaptation, ViT / ConvNeXt / Hiera backbones"
@@ -53,13 +52,13 @@ const skillsSection = {
       "⚡ Failure-mode analysis on production data — FP/FN root-causing, query assignment and loss-level fixes rather than more post-processing"
     ),
     emoji(
-      "⚡ Data strategy — dataset construction, labeling-scheme design (incl. amodal labels), model-assisted labeling with SAM2"
+      "⚡ Data and annotation tools — dataset construction, amodal labeling schemes, and Labelme workflows combining model predictions with human review"
     ),
     emoji(
       "⚡ Deployment under latency budgets — TensorRT, ONNX Runtime, LibTorch (C++), FP16 / mixed precision, custom CUDA kernels"
     ),
     emoji(
-      "⚡ Camera fundamentals — optical-center calibration, active alignment (MTF/SFR), sensor image-quality metrics"
+      "⚡ ML development tools — MCP-based orchestration of data checks, model evaluation, training experiments, and experiment tracking"
     )
   ],
 
@@ -148,17 +147,13 @@ const workExperiences = {
       featured: true, // Shown full-width above the other cards
       companylogo: require("./assets/images/lge.png"),
       date: "Feb 2022 – Present",
-      desc: "Camera-module manufacturing: deep-learning inspection models, data pipelines, and equipment-side deployment.",
+      desc: "Build and operate vision inspection systems and internal ML development tools for camera-module manufacturing, from data and modeling to equipment integration.",
       descBullets: [
-        "Own segmentation/detection architecture for production inspection — selected, trained, and evaluated Mask R-CNN (ConvNeXt / Hiera backbones), DeepLabv3, Mask2Former, EoMT, and SAM2, swapping the production stack as line conditions changed. The measurement pipeline this powers went from ~19.8 operator-hours/day to fully automated (LG Innotek Best Practice Award).",
-        "Systematic failure-mode analysis on production data — traced high-confidence false positives to the second-stage box head rather than the RPN through isolated experiments (anchor scales, NMS/score thresholds, backbone swaps, a two-stage OK/NG filter), steering the fix toward assignment/loss-level changes instead of more post-processing.",
-        "Instance separation for touching same-class objects — diagnosed merged/duplicate masks in query-based models and evaluated Hungarian matching, query-to-GT assignment, localization priors, and separation/boundary losses.",
-        "Data strategy and labeling — built datasets end to end, designed the labeling scheme including canonical-shape (amodal) labels, and used model-assisted labeling (SAM2 refinement, AI-box prompts).",
-        "Prototype → production under latency budgets — cut end-to-end inspection latency ~6× (~2,000 ms → 300–400 ms) via full-path profiling, FP16 / mixed precision, and custom CUDA pre/post-processing kernels; hybrid Windows-native C++ runtime (ONNX Runtime + TensorRT, LibTorch) behind a common DLL interface.",
-        "Amodal reconstruction of damaged film patterns — canonical-label Mask R-CNN predicting the complete mask as a template-matching localizer, plus diffusion-based reconstruction of the missing region.",
-        "Foundation-model adaptation and classification — SAM adapted to domain defects with prompt-guided supervision and LoRA; OK/NG classifiers (ConvNeXt, EfficientNet-B0, EfficientFormer) for epoxy-interconnection inspection.",
-        "Camera fundamentals — optical-center detection, Active Alignment with MTF/SFR-based focus and tilt optimization, sensor image-quality automation (DPC, AE, AWB, PRNU, FPN, binning/subsampling, LCB).",
-        "Beyond vision — FT-Transformer / TST time-series models on equipment telemetry to predict tact-time drift; team AX (AI Transformation) representative."
+        "Automated conductive-ball measurement from ~19.8 operator-hours/day to zero manual measurement. Evolved the production model stack from Mask R-CNN to DeepLabv3, Mask2Former, and EoMT as line conditions changed; received the LG Innotek Best Practice Award.",
+        "Cut end-to-end inspection latency from ~2,000 ms to 300–400 ms through profiling, FP16 / mixed precision, and custom CUDA pre/post-processing. Deploy through a hybrid Windows C++ runtime using ONNX Runtime + TensorRT and LibTorch, integrated with equipment software.",
+        "Own model development and failure analysis: segmentation and OK/NG classification, false-positive diagnosis, and instance separation. Delivered both amodal segmentation and diffusion-based reconstruction for damaged film patterns in a customer-requested follow-on project.",
+        "Develop and operate CV DNN Training Agent and a Labelme-based annotation tool internally. Connect model evaluation, automated experiments, and experiment records with model-assisted labeling and human review.",
+        "Own inspection software from operator UI and equipment I/O to production deployment. As the team's AX representative, lead planning for closed-loop equipment parameter optimization with Bayesian optimization and design of experiments; this initiative remains at the planning stage."
       ]
     },
     {
@@ -193,7 +188,61 @@ const openSource = {
   display: true // Set false to hide this section, defaults to true
 };
 
-// Some big projects you have worked on
+// Selected work: production outcomes and internal tools
+
+const selectedWork = {
+  display: true,
+  title: "Selected Work",
+  subtitle:
+    "Vision systems in production, and the tools that support their development.",
+  projects: [
+    {
+      id: "inspection-automation",
+      category: "Production inspection",
+      title: "Conductive-ball measurement",
+      outcome: "19.8 operator-hours/day → 0",
+      summary:
+        "Built the vision pipeline that replaced manual measurement on manufacturing lines, from dataset creation and model selection to equipment integration.",
+      details: [
+        "Delivered the initial automation in about four months, then improved the system to eliminate the manual measurement step.",
+        "Adapted the model stack as production conditions changed: Mask R-CNN → DeepLabv3 → Mask2Former → EoMT."
+      ],
+      evidence: "Production result · LG Innotek Best Practice Award",
+      technologies: ["Segmentation", "C++", "GPU inference"]
+    },
+    {
+      id: "cv-training-agent",
+      category: "Internal ML tooling",
+      title: "CV DNN Training Agent",
+      outcome: "Data checks → experiments → evaluation",
+      summary:
+        "Develop and operate an internal tool for comparing vision models, running training experiments, and recording results. Claude Code orchestrates the workflow through MCP tools.",
+      details: [
+        "Separate data checks, evaluation, recommendations, and training into four MCP servers; a web UI shares the same core implementation.",
+        "Use fixed evaluation code, data-leakage checks, and experiment records. Hidden-test evaluation is designed to require human approval."
+      ],
+      evidence:
+        "In internal use · Detection, instance segmentation, and classification workflows validated on small public datasets",
+      technologies: ["Python / MCP", "FastAPI", "React / TypeScript"]
+    },
+    {
+      id: "annotation-workflow",
+      category: "Internal annotation tooling",
+      title: "Model-assisted labeling",
+      outcome: "Predict → review → refine",
+      summary:
+        "Built and operate a Labelme-based tool that generates annotations with vision models and lets users inspect and correct the results.",
+      details: [
+        "Expose developed vision models as inference options, keeping users in control of the final labels.",
+        "Connect the labeling tool with the model evaluation and training tool to support the dataset and model development workflow."
+      ],
+      evidence: "In internal use · Connected to CV DNN Training Agent",
+      technologies: ["Labelme", "Model inference", "Human review"]
+    }
+  ]
+};
+
+// Public open-source contributions
 
 const bigProjects = {
   title: "Open-Source Contributions",
@@ -388,6 +437,7 @@ export {
   techStack,
   workExperiences,
   openSource,
+  selectedWork,
   bigProjects,
   achievementSection,
   blogSection,

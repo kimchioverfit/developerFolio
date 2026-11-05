@@ -1,0 +1,129 @@
+@import "../../_globalColor";
+
+.selected-work {
+  scroll-margin-top: 100px;
+
+  .selected-work-intro {
+    color: $cardSubtitle;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .selected-work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .selected-work-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 1px solid $lightBorder1;
+    border-top: 3px solid $buttonColor;
+    border-radius: 10px;
+    box-shadow: $lightBoxShadowDark 0 10px 30px -15px;
+    font-size: 16px;
+    line-height: 1.65;
+    overflow-wrap: break-word;
+
+    h2 {
+      font-size: 24px;
+      line-height: 1.3;
+      margin: 0 0 1rem;
+    }
+
+    p {
+      margin: 0 0 1rem;
+    }
+  }
+
+  .selected-work-category {
+    color: $cardSubtitle;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .selected-work-outcome {
+    color: $buttonColor;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .selected-work-details {
+    padding-left: 1.2rem;
+    margin: 0 0 1.5rem;
+
+    li + li {
+      margin-top: 0.75rem;
+    }
+  }
+
+  .selected-work-footer {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid $lightBorder1;
+  }
+
+  .selected-work-evidence {
+    font-size: 13px;
+    color: $cardSubtitle;
+  }
+
+  .selected-work-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      background: $lightBackground3;
+      border-radius: 4px;
+      padding: 0.2rem 0.6rem;
+      font-size: 12px;
+    }
+  }
+}
+
+.dark-mode .selected-work {
+  .selected-work-intro,
+  .selected-work-category,
+  .selected-work-evidence {
+    color: #c3c8d0;
+  }
+
+  .selected-work-card {
+    border-top-color: $educationCardBorder;
+  }
+
+  .selected-work-outcome {
+    color: $educationCardBorder;
+  }
+
+  .selected-work-technologies li {
+    background: #292e3b;
+  }
+}
+
+@media (max-width: 1100px) {
+  .selected-work .selected-work-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .selected-work .selected-work-intro {
+    font-size: 16px;
+  }
+
+  .selected-work .selected-work-card {
+    padding: 1.25rem;
+  }
+}

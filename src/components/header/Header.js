@@ -7,7 +7,7 @@ import {
   greeting,
   workExperiences,
   skillsSection,
-  openSource,
+  selectedWork,
   blogSection,
   talkSection,
   achievementSection,
@@ -18,7 +18,7 @@ function Header() {
   const {isDark} = useContext(StyleContext);
   const homeHref = process.env.PUBLIC_URL || "/";
   const viewExperience = workExperiences.display;
-  const viewOpenSource = openSource.display;
+  const viewSelectedWork = selectedWork.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
@@ -49,17 +49,22 @@ function Header() {
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#experience">Experience</a>
+            </li>
+          )}
+          {viewSelectedWork && (
+            <li>
+              <a href="#selected-work">Selected Work</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements">Awards</a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <a href="#blogs">Study Notes</a>
             </li>
           )}
           {viewTalks && (
@@ -73,7 +78,7 @@ function Header() {
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="#contact">Contact</a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
